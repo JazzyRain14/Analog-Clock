@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
+
+body {
     position: relative;
     background: #1c1a38;
     height: 100vh;
@@ -13,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 section {
     position: absolute;
     top: 140px;
@@ -20,6 +22,7 @@ section {
     justify-content: center;
     width: 100%;
 }
+
 .container {
     width: 700px;
     height: 250px;
@@ -34,14 +37,18 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
-#hours,#minutes{
+
+#hours,
+#minutes {
     background-color: #1c1a38;
 }
-#seconds{
+
+#seconds {
     background-color: rgb(242, 64, 64);
 }
+
 .timer h2 {
     font-size: 6em;
     color: #fff;
@@ -55,10 +62,132 @@ section {
     background: rgba(255, 255, 255, .058);
     margin: 0 10px;
 }
+
 #meridian {
     position: relative;
     font-weight: 700;
     font-size: 2em;
     top: -50px;
     color: #fff;
+}
+@media screen and (max-width:400px) {
+    section {
+        position: static;
+    }
+
+    .container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .timer h2 {
+        font-size: 2.2em !important;
+        color: #fff;
+    }
+
+    .timer h2:nth-child(odd) {
+        padding: 5px 15px;
+        margin: 0;
+    }
+
+    #meridian {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section {
+        position: static;
+    }
+
+    .container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .timer h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .timer h2:nth-child(odd) {
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    #meridian {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:600px) {
+    section {
+        position: static;
+    }
+
+    .container {
+        width: 600px;
+        height: 200px;
+    }
+
+    .timer h2 {
+        font-size: 4em;
+        color: #fff;
+    }
+
+    .timer h2:nth-child(odd) {
+        padding: 15px 30px;
+        margin: 0 10px;
+    }
+
+    #meridian {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width:800px) {
+    section {
+        position: static;
+    }
+
+    .container {
+        width: 700px;
+        height: 250px;
+    }
+
+    .timer h2 {
+        font-size: 5em;
+        color: #fff;
+    }
+
+    .timer h2:nth-child(odd) {
+        padding: 15px 30px;
+        margin: 0 12px;
+    }
+
+    #meridian {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width:800px) {
+    section {
+        position: static;
+    }
+
+    .container {
+        width: 700px;
+        height: 250px;
+    }
+
+    .timer h2 {
+        font-size: 5em;
+        color: #fff;
+    }
+
+    .timer h2:nth-child(odd) {
+        padding: 15px 30px;
+        margin: 0 12px;
+    }
+
+    #meridian {
+        font-size: 2em;
+    }
 }
